@@ -2,6 +2,12 @@
 #define SHORTEST_PATH
 
 #include <bits/stdc++.h>
+#include "./util/math.h"
+#include "./util/log.h"
+
+
+
+#define INFINTE 32767
 
 std::vector<std::pair<double,double> > GetShortestPath(
     std::vector<std::pair<double,double> > const& points,
