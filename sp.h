@@ -6,8 +6,9 @@
 #include "./util/log.h"
 
 
+#define INFINITE 32767
+#define K 0.1
 
-#define INFINTE 32767
 
 std::vector<std::pair<double,double> > GetShortestPath(
     std::vector<std::pair<double,double> > const& points,
@@ -16,5 +17,8 @@ std::vector<std::pair<double,double> > GetShortestPath(
     std::pair<double,double> from,
     std::pair<double,double> to
     );
+
+//int pointInFace(Vector3 A, Vector3 B, Vector3 C, Vector3 P);
+
 
 #endif // SHORTEST PATH
