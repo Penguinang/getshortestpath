@@ -7,7 +7,14 @@
 
 
 #define INFINITE 32767
-#define K 0.1
+#define K 0.2
+
+
+struct surPoint {
+    int vertex;
+    double cost = 0;
+    surPoint* next = NULL;
+};
 
 
 std::vector<std::pair<double,double> > GetShortestPath(
@@ -17,8 +24,5 @@ std::vector<std::pair<double,double> > GetShortestPath(
     std::pair<double,double> from,
     std::pair<double,double> to
     );
-
-//int pointInFace(Vector3 A, Vector3 B, Vector3 C, Vector3 P);
-
 
 #endif // SHORTEST PATH
